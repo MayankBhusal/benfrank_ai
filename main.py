@@ -44,12 +44,15 @@
 # print("Exited successfully")
 
 
-import streamlit as st
-import google.generativeai as palm
 import os
 import time
+
+import google.generativeai as palm
 import numpy as np
 import pandas as pd
+import streamlit as st
+
+google_api_key=os.environ['GOOGLE_API_KEY']
 
 google_api_key=os.environ['GOOGLE_API_KEY']
 palm.configure(api_key=google_api_key)
